@@ -24,12 +24,13 @@ blueprint:
           multiple: false
     trv_devices:
       name: Sonoff TRVZB(s)
-      description: The Sonoff TRVZB device (can be multiple)
+      description: The entity of the Sonoff TRVZB device that represents the external temperature value.
       selector:
-        device:
+        entity:
           multiple: true
           filter:
-            - model: TRVZB
+            - domain: number
+              device_class: temperature
 triggers:
   - trigger: state
     entity_id: !input sensor_entity
