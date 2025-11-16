@@ -24,7 +24,7 @@ blueprint:
           multiple: false
     trv_devices:
       name: Sonoff TRVZB(s)
-      description: The Sonoff TRVZB device (can be multiple
+      description: The Sonoff TRVZB device (can be multiple)
       selector:
         device:
           multiple: true
